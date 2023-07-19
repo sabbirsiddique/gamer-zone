@@ -36,7 +36,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.title {
+.gamer-title {
   color: #0b0223;
   font-size: 45px;
   font-weight: 700;
@@ -155,7 +155,45 @@
   border-radius: 48px;
   background: #4ec5f7;
 }
+/* Banner design ends */
 
+/* Game coLLection section starts  */
+.game-collection {
+  width: 90%;
+  margin: auto;
+  background-color: white;
+  padding: 10px;
+}
+.card {
+  width: 220px;
+  height: 300px;
+  border-radius: 5px;
+}
+.game-img {
+  width: 100%;
+}
+.game-title {
+  margin-top: 10px;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.title{
+  text-align: center;
+  margin-top: 100px;
+}
+.collection-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.gradient {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /* Responsive design */
 
 /* For Tablet devices */
@@ -167,37 +205,31 @@
     gap: 30px;
   }
 
-  .banner-container{
+  .banner-container {
     flex-direction: column;
   }
-  .banner-img{
+  .banner-img {
     padding: 0px;
   }
-  .banner-image{
+  .banner-image {
     width: 960px;
   }
-  /* .banner-container{
+  .cards{
     display: grid;
-    grid-template-columns: 1fr;
-    
+    grid-template-columns: repeat(2,1fr);
+    width: 50%;
+    margin: auto;
   }
-  .banner-img{
-    display: flex;
-    justify-content: center;
-    padding: 0px;
-    width: 100%;
-    margin: 0 auto;
-  } */
 }
+
 /* For mobile devices */
 @media screen and (max-width: 576px) {
   .nav-container,
-  .banner-container
-  {
+  .banner-container {
     flex-direction: column;
   }
 
-  .banner-container{
+  .banner-container {
     flex-direction: column-reverse;
   }
   .nav-items-container {
@@ -213,16 +245,15 @@
     width: auto;
     margin: 0 auto;
   }
-  .banner-container{
+  .banner-container {
     width: 192px;
   }
-  .banner-image{
+  .banner-image {
     width: 575px;
     gap: 10px;
   }
-  .banner-img{
+  .banner-img {
     padding: 0px;
-
   }
 
   .banner-info h4 {
@@ -231,5 +262,11 @@
   .banner-info h1 {
     font-size: 1.5rem;
   }
- 
+
+  .cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 40%;
+    margin: auto;
+  }
 }
