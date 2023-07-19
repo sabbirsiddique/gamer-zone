@@ -6,7 +6,9 @@
   margin: 0;
   padding: 0;
 }
+
 /* Nav bar design */
+
 .fa-tiktok {
   color: #000000;
   font-size: 1em;
@@ -77,6 +79,10 @@
   justify-content: space-around;
   align-items: center;
 }
+
+/* Nav bar design ends */
+
+/* Banner design starts */
 
 .banner-section {
   max-width: 1920px;
@@ -155,9 +161,10 @@
   border-radius: 48px;
   background: #4ec5f7;
 }
+
 /* Banner design ends */
 
-/* Game coLLection section starts  */
+/* Game coLLection section design starts  */
 .game-collection {
   width: 90%;
   margin: auto;
@@ -196,8 +203,59 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* Game collection section ends */
+/* Game collection section design ends */
+
+/* card hover design starts */
+
+.card {
+  position: relative;
+  width: 220px;
+  height: 257px;
+}
+.game-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: black;
+}
+
+.card:hover .overlay {
+  opacity: 0.7;
+  border: 1px solid #ff42a5;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.fa-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.watch {
+  font-size: 25px;
+  background: linear-gradient(90deg, #d40808 0%, #da0b0b 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Card hover design ends */
+
 /* Play section starts here */
+
 .play {
   display: flex;
   gap: 100px;
@@ -233,6 +291,7 @@
   bottom: 150px;
   right: 100px;
 }
+
 /* Play section design ends */
 
 /* Categories section design */
@@ -248,7 +307,7 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
-  color: #0B0223;
+  color: #0b0223;
   font-size: 1.4rem;
   font-weight: 600;
   border-radius: 50px;
@@ -258,10 +317,10 @@
   height: 80px;
   cursor: pointer;
 }
-.categories-button:hover{
-    border: 1px solid #ff42a5;
-    color: #ff42a5;
-    transition: 0.7s;
+.categories-button:hover {
+  border: 1px solid #ff42a5;
+  color: #ff42a5;
+  transition: 0.5s;
 }
 .btn-icon {
   width: 60px;
@@ -278,13 +337,79 @@
   justify-content: center;
   padding: 70px 200px;
 }
-.game-ctg{
-    text-align: center;
-    
+.game-ctg {
+  text-align: center;
 }
+
+/* Categories section design ends */
+
+/* Footer section design starts */
+
+footer {
+  width: 1903px;
+  height: 400px;
+  background: #140342;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fab {
+  color: #fff;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80%;
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.footer-section a {
+  display: inline-flex;
+  padding: 10px;
+  align-items: flex-start;
+  text-decoration: none;
+  gap: 60px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.footer-section h3 {
+  display: inline-flex;
+  gap: 60px;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.footer-text {
+  margin-top: 20px;
+}
+
+.footer-title {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 700;
+}
+/* Footer section design ends */
+
 /* Responsive design */
 
 /* For Tablet devices */
+
 @media screen and (max-width: 960px) {
   .nav-container {
     padding: 20px 120px;
@@ -312,16 +437,54 @@
   .games-wallpaper img {
     margin-left: 10px;
   }
-  .categories{
+
+  .game-img {
+    height: 200px;
+  }
+
+  .categories {
     width: 100%;
   }
-  .game-categories{
+  .game-categories {
     margin: 0px auto;
     padding: 70px 100px;
+  }
+
+  footer {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-content {
+    max-width: 50%;
+  }
+
+  .footer-logo {
+    margin-bottom: 10px;
+  }
+
+  .footer-section {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .footer-responsive {
+    display: flex;
+  }
+
+  .footer-section h3 {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .footer-text {
+    margin-top: 0;
   }
 }
 
 /* For mobile devices */
+
 @media screen and (max-width: 576px) {
   .nav-container,
   .banner-container {
@@ -368,7 +531,9 @@
     width: 40%;
     margin: auto;
   }
-
+  .game-img {
+    height: 200px;
+  }
   .play {
     flex-direction: column;
     width: 50%;
@@ -381,15 +546,59 @@
   .play-title {
     margin-bottom: 50px;
   }
-  .game-categories{
+  .game-categories {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
   }
-  .game-categories{
+  .game-categories {
     padding: 10px 70px;
   }
-  .categories-button{
+  .categories-button {
     width: 150px;
-    font-size: 1.2rem
+    font-size: 1.2rem;
+  }
+
+  footer {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-content {
+    max-width: 100%;
+  }
+
+  .footer-logo {
+    margin-bottom: 10px;
+  }
+
+  .footer-section {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    margin-bottom: 20px;
+  }
+  .footer-responsive {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    margin-top: 10px;
+    gap: 50px;
+  }
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    margin-top: 20px;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .footer-section h3 {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .footer-text {
+    margin-top: 0;
+    display: grid;
+    text-align: center;
+    margin: 30px 0px;
   }
 }
