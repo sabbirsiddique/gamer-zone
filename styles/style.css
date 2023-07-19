@@ -203,7 +203,7 @@
   gap: 100px;
   align-items: center;
   width: 50%;
-  margin: 100px auto;
+  margin: 100px auto 0px auto;
 }
 .play-title {
   text-align: right;
@@ -235,6 +235,53 @@
 }
 /* Play section design ends */
 
+/* Categories section design */
+.categories {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+}
+.categories-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: #0B0223;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 50px;
+  background-color: white;
+  border: none;
+  width: 243px;
+  height: 80px;
+  cursor: pointer;
+}
+.categories-button:hover{
+    border: 1px solid #ff42a5;
+    color: #ff42a5;
+    transition: 0.7s;
+}
+.btn-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 5px;
+}
+.game-categories {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 200px;
+}
+.game-ctg{
+    text-align: center;
+    
+}
 /* Responsive design */
 
 /* For Tablet devices */
@@ -264,6 +311,13 @@
 
   .games-wallpaper img {
     margin-left: 10px;
+  }
+  .categories{
+    width: 100%;
+  }
+  .game-categories{
+    margin: 0px auto;
+    padding: 70px 100px;
   }
 }
 
@@ -326,5 +380,16 @@
   }
   .play-title {
     margin-bottom: 50px;
+  }
+  .game-categories{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+  }
+  .game-categories{
+    padding: 10px 70px;
+  }
+  .categories-button{
+    width: 150px;
+    font-size: 1.2rem
   }
 }
