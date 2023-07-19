@@ -346,23 +346,26 @@
 /* Footer section design starts */
 
 footer {
-  width: 1903px;
-  height: 400px;
+  
   background: #140342;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 .fab {
   color: #fff;
 }
 .footer-content {
+  width: 1920px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 80%;
+  width: 80%;
+  margin: auto;
 }
 .footer-logo {
   display: flex;
